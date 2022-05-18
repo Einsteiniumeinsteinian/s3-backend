@@ -3,6 +3,6 @@ resource "aws_instance" "nodeWebServer" {
   instance_type = "t3.micro"
 
   tags = {
-    "usage" = "nodeWebVm"
+    "Name" = "nodeWebVm"
   }
 }
