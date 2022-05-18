@@ -5,10 +5,11 @@ terraform {
       version = "~> 3.0"
     }
   }
-#   backend "s3" {
-#     bucket         = "angelo-terraform-state-backend"
-#     key            = "terraform.tfstate"
-#     region         = "eu-west-1"
-#     dynamodb_table = "terraform_state"
-#   }
+  backend "s3" {
+    bucket         = "chibuzo-985729960198-bucket"
+    key            = "dev/terraform.tfstate"
+    region = "eu-west-3"
+    dynamodb_table = "chibuzo-dynamodb"
+  }
 }
+

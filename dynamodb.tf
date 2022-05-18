@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "mydbtable" {
-  name           = "my_terraform_state_db"
+  name           = "chibuzo-dynamodb"
   read_capacity  = 5
   write_capacity = 5
   hash_key       = "LockID"
@@ -8,6 +8,6 @@ resource "aws_dynamodb_table" "mydbtable" {
     type = "S"
   }
   tags = {
-    "Name" = "DynamoDB Terraform State Lock Table"
+    "Name" = "chibuzo dynamo db"
   }
 }
